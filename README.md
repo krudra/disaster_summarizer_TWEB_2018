@@ -6,17 +6,17 @@ This repository contains following set of codes.
 Preprocessing & Fragmentation
 ------------------------------
 
-This directory contains codes to remove noises from tweets, perform lemmatization, fragmentation etc. After fragmentation the files will go to classification phase to detect situational and non-situational tweet fragments.
+This directory contains codes to remove noises from tweets, fragmentation etc. After fragmentation the files will go to classification phase to detect situational and non-situational tweet fragments.
 
 Classification
 --------------
 
-This directory contains codes which are used to classify tweets (tweet-fragments) into situational and non-situational label. After this stage situational tweets are passed to the summarizer.
+This directory contains codes which are used to classify tweets (tweet-fragments) into situational and non-situational label. After this stage classified tweets are passed to the summarizer.
 
 Summarization
 --------------
 
-This directory contains codes which extracts content words from tweets and summarize the information.
+This directory contains codes which extracts content words from tweets and summarize the information. This phase only considers situational tweets for which classifier's confidence score >=0.8.
 
 This directory contains two summarization codes
 
